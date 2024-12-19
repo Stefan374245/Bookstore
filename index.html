@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore</title>
+    <link rel="icon" href="./assets/icons/bookstoreIcon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/templates.css" />
+    <link rel="stylesheet" href="./style/standard.css" />
+    <link rel="stylesheet" href="./style/assets.css" />
+
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+  </head>
+
+  <body onload="init()">
+    <header>
+      <img src="./assets/icons/bookstoreIcon.png" alt="bookstore-icon" />
+      <h1><span id="p1">DA</span> Bookstore</h1>
+      <h2>- get your book here</h2>
+    </header>
+    <main>
+      <section class="bookStoreContent" id="mainContent"></section>
+    </main>
+    <script src="./scripts/renderScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+main {
+  display: flex;
+}
+
+.bookStoreContent {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bookStoreCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  background-color: rgb(25, 132, 139);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 720px;
+}
+
+p {
+  font-size: 18px;
+  padding-bottom: 12px;
+}
+
+#p1 {
+  color: rgb(216, 11, 11);
+}
+
+#p1 span {
+  color: black;
+  padding-left: 5px;
+}
+.priceLikeContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.likesContainer {
+  display: flex;
+}
+
+.tableBookInfo {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+
+}
+
+.commentBox {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+   max-height: 160px;
+  overflow-y: auto;
+  scrollbar-color: rgb(8, 164, 192) rgb(144, 206, 195);
+  scrollbar-width: thin;
+}
+
+ins {
+  font-size: 16px;
+}
+
+.commentBox p {
+font-size: 17px;
+}
+
+.usernameInputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+input {
+  width: 290px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+input::placeholder {
+  padding: 5px;
+  color: rgb(51, 181, 190);
+}
+
+textarea {
+  width: 290px;
+  max-width: 400px;
+  max-height: 200px;
+  border-radius: 8px;
+  text-align: center;
+  border: none;
+}
+
+textarea::placeholder {
+  padding: 5px;
+  color: rgb(51, 181, 190);
+}
+.btnPostComment {
+  width: fit-content;
+  background-color: rgba(24, 167, 177, 0.822);
+  padding: 10px 5px;
+  border-radius: 8px;
+}
+
+.btnPostComment:hover {
+  background-color: rgba(25, 131, 139, 0.945);
+}
+
+@media (max-width: 500px) {
+  .bookStoreCard {
+    max-width: 260px;
+    padding: 8px;
+  }
+
+  .bookStoreContent {
+    padding: 8px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .commentBox {
+    height: 120px;
+  }
+
+  input {
+    width: 240px;
+    padding: 0;
+  }
+
+  textarea {
+    width: 240px;
+    padding: 0;
+  }
+
+  .btnPostComment {
+    padding: 5px 3px;
+  }
+}

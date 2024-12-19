@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+   
+}
+
+body {
+    background-color: rgb(49, 49, 49);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+    background: linear-gradient(to right, rgb(49, 49, 49), rgb(19, 91, 96));
+}
+
+
+header {
+display: flex;
+align-items: center;
+background: linear-gradient(to left, rgb(49, 49, 49), rgb(19, 91, 96));
+}
+
+header h2 {
+    padding-left: 8px;
+}
+h3 {
+    padding-top: 16px;
+}
+
+.h1bookName {
+    height: 70px;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+@media (max-width: 620px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+    h2 {
+        display: none;
+    }
+}
