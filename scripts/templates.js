@@ -1,3 +1,9 @@
+/**
+ * Generates the main content template for a book.
+ *
+ * @param {number} bookindex - The index of the book in the books array.
+ * @returns {string} The HTML template string for the main content of the book.
+ */
 function getMainContentTemplate(bookindex) {
   let heartImg = books[bookindex].liked
     ? "./assets/icons/heart.png"
@@ -47,6 +53,13 @@ function getMainContentTemplate(bookindex) {
 `;
 }
 
+/**
+ * Generates an HTML template for a comment.
+ *
+ * @param {number} bookindex - The index of the book in the books array.
+ * @param {number} commentindex - The index of the comment in the book's comments array.
+ * @returns {string} The HTML template for the comment.
+ */
 function getCommentTemplate(bookindex, commentindex) {
   return `
         <ins>${books[bookindex].comments[commentindex].name}</ins>
